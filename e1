@@ -1,0 +1,29 @@
+temperatura = []
+
+for i in range(5):
+    temp = int(input("Ingresa una temperatura:"))
+    temperatura.append(temp)
+
+promedio = sum(temperatura)/len(temperatura)
+t_max = max(temperatura)
+
+check = True
+for t in temperatura:
+    if t < 15 or t > 30:
+        check = False
+        break
+if check:
+    print(f"Las temperaturass se encuentran entre el rango de 15° y 30°")
+
+else:
+    print(f"Las temperaturas no se encuentran entre el rango de 15° y 30°")
+
+check = True
+for t in temperatura:
+    if t < 10 or t > 35:
+        chek = False
+        break
+if check:
+    print("Las temperaturas se encuentran dentro del rango de 10° a 35°")
+else:
+    print("La temperaturas no se encuentran fuera del rango de 10° a 35°")
